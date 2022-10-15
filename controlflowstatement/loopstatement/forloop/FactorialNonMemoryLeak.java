@@ -5,7 +5,7 @@ class FactorialNonMemoryLeak {
         int in = 5;
         if (in > 0) {
             System.out.print("Factorial of " + in + " = ");
-        }
+        
         for (int i = 1, res = i; i <= in; ++i) {
             if (i + 1 > in) {
                 System.out.print(i + " =");
@@ -15,6 +15,7 @@ class FactorialNonMemoryLeak {
             res = res * i;
             if (i + 1 > in) {
                 System.out.println(" " + res);
+}
             }
         }
     }
