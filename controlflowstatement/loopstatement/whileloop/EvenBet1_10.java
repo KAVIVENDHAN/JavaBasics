@@ -6,7 +6,11 @@ class EvenBet1_10 {
         System.out.println("Even Number between 1 and 10 is:  ");
         while (i <= 10) {
             if (i % 2 == 0) {
-                System.out.print(i + ", ");
+                if (i + 1 > 10) {
+                    System.out.print(i + ". ");
+                } else {
+                    System.out.print(i + ", ");
+                }
             }
             i++;
         }
